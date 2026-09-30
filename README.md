@@ -24,5 +24,5 @@ Es HTML, CSS y JS sin dependencias ni proceso de build: se puede publicar tal cu
 
 ## Antes de publicar
 
-- Reemplazar `https://DOMINIO-GEAGRO/` por el dominio real en `index.html`, `campo/index.html`, `vid/index.html`, `robots.txt` y `sitemap.xml`.
+- Publicado con GitHub Pages en https://sorensenclara.github.io/geagro-web/. Si más adelante se usa un dominio propio, reemplazar esa URL en `index.html`, `campo/index.html`, `vid/index.html`, `robots.txt` y `sitemap.xml`, y agregar el archivo `CNAME`.
 - El formulario de demo hoy arma el mensaje y abre WhatsApp. Cuando exista el endpoint (Django), cambiarlo en `assets/js/geagro-landing.js`.

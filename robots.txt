@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://DOMINIO-GEAGRO/sitemap.xml
+Sitemap: https://sorensenclara.github.io/geagro-web/sitemap.xml
