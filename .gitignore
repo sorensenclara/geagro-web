@@ -1,0 +1,8 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Material original (videos, zips, fotos en alta, íconos sin optimizar): queda en la Mac, no se sube
+_originales/
+assets/img/*
+!assets/img/web/
