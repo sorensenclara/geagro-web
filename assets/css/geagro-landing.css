@@ -142,7 +142,7 @@ p { margin: 0; }
 .pillars b { display: block; font-size: 1.1rem; color: var(--geagro-green-900); }
 .pillars span { font-size: .93rem; color: var(--muted); line-height: 1.4; }
 .quote { margin: 0; background: var(--geagro-green-700); color: #fff; border-radius: 36px 36px 36px 8px; padding: 44px 36px 32px; position: relative; display: grid; gap: 24px; }
-.quote::before { content: "\201C"; position: absolute; top: -30px; left: 30px; font: 900 7rem/1 var(--font); color: var(--geagro-sun); }
+.quote::before { content: "\201C"; position: absolute; top: -30px; left: 30px; font: 700 7rem/1 var(--font); color: var(--geagro-sun); }
 .quote blockquote { margin: 0; display: grid; gap: 10px; font-size: 1.18rem; line-height: 1.55; font-weight: 300; }
 .quote strong { font-weight: 700; }
 .quote figcaption { display: flex; align-items: center; gap: 14px; }
@@ -240,7 +240,7 @@ p { margin: 0; }
 .footer-contact svg { width: 44px; height: 44px; fill: currentColor; }
 .footer-contact svg.stroke, .footer-social svg.stroke { fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
 .footer-contact span { font-weight: 400; }
-.footer-contact span b { font-weight: 900; }
+.footer-contact span b { font-weight: 700; }
 .footer-social { display: flex; gap: 12px; margin-top: 16px; }
 .footer-social a { width: 44px; height: 44px; border: 2px solid #fff; border-radius: 50%; display: grid; place-items: center; transition: background-color .15s, color .15s; }
 .footer-social a:hover { background: #fff; color: #000; }
