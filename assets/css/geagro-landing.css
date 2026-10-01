@@ -465,3 +465,14 @@ p { margin: 0; }
   .features li { align-content: start; }
   .features li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
+
+/* VID: sección Brochure + Demo con predominio violeta */
+.theme-vid .section-soft:has(.convert) { background: var(--geagro-purple-50); }
+.theme-vid .convert .btn-primary { background: var(--geagro-purple-700); }
+.theme-vid .convert .btn-primary:hover { background: var(--geagro-purple-900); }
+.theme-vid .convert .brochure-file { background: var(--geagro-purple-50); }
+.theme-vid .convert .demo-form input:focus, .theme-vid .convert .demo-form textarea:focus { outline-color: var(--geagro-purple-700); }
+.theme-vid .convert .radios input { accent-color: var(--geagro-purple-700); }
+.theme-vid .convert .radios label:has(input:checked) { border-color: var(--geagro-purple-500); background: #fff; }
+.theme-vid .convert .demo-form input, .theme-vid .convert .demo-form textarea, .theme-vid .convert .radios label { border-color: #e4d6e5; background: #fbf8fb; }
+.theme-vid .convert .form-status.ok { color: var(--geagro-purple-700); }
