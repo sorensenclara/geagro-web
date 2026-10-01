@@ -476,3 +476,7 @@ p { margin: 0; }
 .theme-vid .convert .radios label:has(input:checked) { border-color: var(--geagro-purple-500); background: #fff; }
 .theme-vid .convert .demo-form input, .theme-vid .convert .demo-form textarea, .theme-vid .convert .radios label { border-color: #e4d6e5; background: #fbf8fb; }
 .theme-vid .convert .form-status.ok { color: var(--geagro-purple-700); }
+
+/* VID: todas las secciones suaves en violeta claro (en lugar de verde) */
+.theme-vid .section-soft { background: var(--geagro-purple-50); }
+.theme-vid .section-soft .note { background: #fff; }
