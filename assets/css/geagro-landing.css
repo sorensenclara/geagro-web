@@ -486,3 +486,7 @@ p { margin: 0; }
 
 /* VID: sección de flujo con fondo blanco */
 .theme-vid .flow-section { background: #fff; }
+
+/* CAMPO: "Qué incluye" y "Producción y economía" con fondo blanco (onda del hero en blanco para empalmar) */
+.theme-campo #incluye, .theme-campo .prod-eco { background: #fff; }
+.hero-campo::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 100V62C300 14 620 20 900 56S1300 92 1440 38V100Z' fill='%23ffffff'/%3E%3C/svg%3E"); }
