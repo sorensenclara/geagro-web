@@ -438,12 +438,11 @@ p { margin: 0; }
 /* onda de adelante, del color de la sección siguiente */
 .hero::after { height: clamp(40px, 5.2vw, 84px); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 100V62C300 14 620 20 900 56S1300 92 1440 38V100Z' fill='%23f7faf4'/%3E%3C/svg%3E"); }
 /* en la principal la sección siguiente (Cómo funciona) es blanca */
-.hero:not(.hero-campo):not(.hero-vid)::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 100V62C300 14 620 20 900 56S1300 92 1440 38V100Z' fill='%23eff5ee'/%3E%3C/svg%3E"); }
+.hero:not(.hero-campo):not(.hero-vid)::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 100V62C300 14 620 20 900 56S1300 92 1440 38V100Z' fill='%23f1f8f1'/%3E%3C/svg%3E"); }
 .hero > .container { position: relative; z-index: 2; }
 
 /* ---------- Cómo funciona con ilustración de fondo ---------- */
-.how { background: #eff5ee url("../img/web/bg-como-funciona.jpg") center bottom / cover no-repeat;
-  background-image: image-set(url("../img/web/bg-como-funciona.webp") type("image/webp"), url("../img/web/bg-como-funciona.jpg") type("image/jpeg"));
+.how { background: #f1f8f1 url("../img/web/bg-como-funciona.webp") center bottom / cover no-repeat;
   padding-bottom: clamp(140px, 16vw, 240px); }
 .how-ico { background: #fff; box-shadow: 0 8px 22px rgba(11,52,34,.08); }
 @media (max-width: 720px) { .how { background-size: auto 100%; background-position: 30% bottom; padding-bottom: 120px; } }
