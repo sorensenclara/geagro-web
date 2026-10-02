@@ -267,8 +267,6 @@ p { margin: 0; }
 }
 .hero-media-single { padding-bottom: 0; }
 .hero-media-single .monitor { width: 100%; }
-.crumbs { font-size: .88rem; color: rgba(255,255,255,.75); display: flex; gap: 8px; }
-.crumbs a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
 .hero-wm { display: flex; align-items: center; gap: 12px; font-weight: 700; font-size: 1.6rem; line-height: 1; }
 .hero-wm img { width: 56px; height: 56px; background: #fff; border-radius: 50%; padding: 8px; }
 .hero-wm em { font-style: normal; color: var(--geagro-green-400); }
