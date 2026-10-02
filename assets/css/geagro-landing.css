@@ -490,3 +490,16 @@ p { margin: 0; }
 /* CAMPO: "Qué incluye" y "Producción y economía" con fondo blanco (onda del hero en blanco para empalmar) */
 .theme-campo #incluye, .theme-campo .prod-eco { background: #fff; }
 .hero-campo::after { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'%3E%3Cpath d='M0 100V62C300 14 620 20 900 56S1300 92 1440 38V100Z' fill='%23ffffff'/%3E%3C/svg%3E"); }
+
+/* ---------- Componente CTA de versión (CAMPO / VID) ----------
+   Parámetros por página en el style inline de la <section>: background-image (fondo) y --cta-bg-color (color de respaldo).
+   La URL va en el HTML para que se resuelva relativa a la página. */
+.cta-band.cta-version { background-color: var(--cta-bg-color, var(--geagro-green-900)); background-position: center; background-size: cover; background-repeat: no-repeat; }
+.cta-band.cta-version::after { display: none; }
+.cta-version .cta-actions { align-items: center; gap: 22px; }
+.cta-version .btn-sun span { transition: transform .15s; }
+.cta-version .btn-sun:hover span { transform: translateX(3px); }
+/* Botón secundario: liviano, no compite con "Solicitar demo" */
+.btn-cta-secondary { display: inline-flex; align-items: center; gap: 10px; padding: .85em 1.3em; border: 1px solid rgba(255,255,255,.4); border-radius: var(--radius-pill); color: rgba(255,255,255,.92); font: 600 .86rem var(--font); letter-spacing: .05em; text-transform: uppercase; background: transparent; transition: background-color .15s, border-color .15s; }
+.btn-cta-secondary svg { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.btn-cta-secondary:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.7); color: #fff; }
