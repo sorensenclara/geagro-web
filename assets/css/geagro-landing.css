@@ -504,3 +504,31 @@ p { margin: 0; }
 .footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 26px; margin-top: 28px; font-size: .9rem; }
 .footer-nav a { color: rgba(255,255,255,.75); }
 .footer-nav a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+
+/* ---------- Planes (Lite / Plus) — solo nombre y precio, sin características ---------- */
+.plans { background: var(--white); }
+.plans-head { display: grid; gap: 14px; justify-items: center; text-align: center; max-width: 760px; margin: 0 auto 48px; }
+.plans-head::before { content: ""; width: 72px; height: 3px; border-radius: 2px; background: #a9cfae; margin-bottom: 6px; }
+.plans-head p { color: var(--muted); font-size: 1.15rem; line-height: 1.5; max-width: 60ch; }
+.plans-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; max-width: 900px; margin: 0 auto; align-items: stretch; }
+.plan-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-md); box-shadow: var(--shadow-sm); overflow: hidden; display: flex; flex-direction: column; }
+.plan-head { padding: 26px 32px 24px; color: #fff; }
+.plan-lite .plan-head { background: var(--geagro-green-400); }
+.plan-plus .plan-head { background: var(--geagro-green-900); }
+.plan-brand { font-weight: 600; font-size: 1rem; letter-spacing: .08em; text-transform: uppercase; opacity: .95; }
+.plan-name { font-size: clamp(2.2rem, 4vw, 2.8rem); line-height: 1.05; color: #fff; }
+.plan-body { padding: 28px 32px 32px; display: flex; flex-direction: column; flex: 1; }
+.plan-label { font-size: .95rem; color: var(--muted); }
+.plan-price { font-weight: 700; font-size: clamp(2.4rem, 6vw, 3.4rem); line-height: 1.05; color: var(--geagro-green-900); white-space: nowrap; margin-top: 4px; }
+.plan-tax { color: var(--muted); font-size: 1.05rem; margin-top: 4px; }
+.plan-sep { border: 0; border-top: 1px solid var(--border); margin: 26px 0 22px; }
+.plan-impl { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.plan-impl-amount { font-weight: 700; font-size: clamp(1.4rem, 3.2vw, 1.8rem); color: var(--geagro-green-900); white-space: nowrap; line-height: 1.15; }
+.plan-impl-tax { color: var(--muted); font-size: .95rem; }
+.plan-once { font-style: italic; font-size: .92rem; color: var(--muted); margin-top: 2px; }
+.plan-cta { margin-top: auto; align-self: stretch; }
+.plan-body .plan-once { margin-bottom: 28px; }
+@media (max-width: 760px) {
+  .plans-grid { grid-template-columns: 1fr; max-width: 460px; gap: 24px; }
+  .plan-head, .plan-body { padding-inline: 24px; }
+}
