@@ -71,20 +71,12 @@
   });
 })();
 
-/* FAQ acordeón: una sola pregunta abierta a la vez + "Ver todas las preguntas" */
+/* FAQ acordeón: una sola pregunta abierta a la vez */
 (function () {
   document.querySelectorAll('.faq-list').forEach((list) => {
     const items = list.querySelectorAll('details');
     items.forEach((d) => d.addEventListener('toggle', () => {
       if (d.open) items.forEach((o) => { if (o !== d) o.open = false; });
     }));
-  });
-  const all = document.getElementById('faqAll');
-  if (all) all.addEventListener('click', () => {
-    const extra = document.querySelectorAll('.faq-extra');
-    const show = all.getAttribute('aria-expanded') !== 'true';
-    extra.forEach((d) => { d.hidden = !show; if (!show) d.open = false; });
-    all.setAttribute('aria-expanded', String(show));
-    all.firstChild.textContent = show ? 'Ver menos preguntas ' : 'Ver todas las preguntas ';
   });
 })();

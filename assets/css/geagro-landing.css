@@ -3,6 +3,11 @@
    GENEOS Coop
    ========================================================= */
 
+/* ---------- Tipografía local: Titillium Web (SIL OFL, ver assets/fonts/OFL-titillium-web.txt) ---------- */
+@font-face { font-family: 'Titillium Web'; font-style: normal; font-weight: 400; font-display: swap; src: url('../fonts/titillium-web-latin-400-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Titillium Web'; font-style: normal; font-weight: 600; font-display: swap; src: url('../fonts/titillium-web-latin-600-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+@font-face { font-family: 'Titillium Web'; font-style: normal; font-weight: 700; font-display: swap; src: url('../fonts/titillium-web-latin-700-normal.woff2') format('woff2'); unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD; }
+
 :root {
   --geagro-purple-900: #3f2642;
   --geagro-purple-700: #6b3f6e;
@@ -96,27 +101,24 @@ p { margin: 0; }
 .menu-toggle span { display: block; height: 2px; background: var(--geagro-green-900); margin: 5px 0; border-radius: 2px; }
 
 @media (max-width: 1140px) {
-  .menu-toggle { display: block; }
-  .menu { display: none; position: absolute; top: 82px; left: 0; right: 0; background: #fff; flex-direction: column; align-items: stretch; gap: 4px; padding: 12px 20px 22px; box-shadow: 0 12px 24px rgba(0,0,0,.08); }
-  .menu.is-open { display: flex; }
-  .menu > a:not(.btn), .dropdown-toggle { padding: 12px 0; border-bottom: 1px solid var(--border); width: 100%; }
-  .dropdown-menu { position: static; transform: none; width: auto; box-shadow: none; padding: 4px 0 8px; }
-  .menu .btn { margin-top: 12px; }
+.menu-toggle { display: block; }
+.menu { display: none; position: absolute; top: 82px; left: 0; right: 0; background: #fff; flex-direction: column; align-items: stretch; gap: 4px; padding: 12px 20px 22px; box-shadow: 0 12px 24px rgba(0,0,0,.08); }
+.menu.is-open { display: flex; }
+.menu > a:not(.btn), .dropdown-toggle { padding: 12px 0; border-bottom: 1px solid var(--border); width: 100%; }
+.dropdown-menu { position: static; transform: none; width: auto; box-shadow: none; padding: 4px 0 8px; }
+.menu .btn { margin-top: 12px; }
 }
 
 /* ---------- hero ---------- */
-.hero { position: relative; color: #fff; padding-block: clamp(64px, 9vw, 120px); background: linear-gradient(90deg, rgba(6,40,23,.92) 0%, rgba(6,40,23,.72) 45%, rgba(6,40,23,.25) 100%), url("../img/web/hero.jpg") center / cover no-repeat;
-  background-image: linear-gradient(90deg, rgba(6,40,23,.92) 0%, rgba(6,40,23,.72) 45%, rgba(6,40,23,.25) 100%), image-set(url("../img/web/hero.webp") type("image/webp"), url("../img/web/hero.jpg") type("image/jpeg")); overflow: hidden; }
+.hero { position: relative; color: #fff; padding-block: clamp(64px, 9vw, 120px); background: linear-gradient(90deg, rgba(6,40,23,.92) 0%, rgba(6,40,23,.72) 45%, rgba(6,40,23,.25) 100%), url("../images/shared/hero.jpg") center / cover no-repeat;
+  background-image: linear-gradient(90deg, rgba(6,40,23,.92) 0%, rgba(6,40,23,.72) 45%, rgba(6,40,23,.25) 100%), image-set(url("../images/shared/hero-1920.avif") type("image/avif"), url("../images/shared/hero-1920.webp") type("image/webp"), url("../images/shared/hero.jpg") type("image/jpeg")); overflow: hidden; }
 .hero-grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 48px; align-items: center; }
 .hero-copy { display: grid; gap: 22px; min-width: 0; }
 .hero h1 { color: #fff; }
 .hl { color: var(--geagro-sun); }
 .hero-lead { font-size: 1.15rem; max-width: 52ch; color: rgba(255,255,255,.88); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
-.hero-versions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 6px; }
-.hero-versions a { background: #fff; border-radius: var(--radius-pill); padding: 10px 18px; transition: transform .15s; }
-.hero-versions a:hover { transform: translateY(-2px); }
-.hero-versions img { height: 30px; width: 30px; }
+
 /* Wordmark de versión (el SVG de CAMPO todavía dice CEREALES) */
 .wm { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: 1.25rem; letter-spacing: .01em; color: var(--geagro-sun-700); line-height: 1; }
 .wm em { font-style: normal; color: var(--geagro-green-500); margin-left: -8px; }
@@ -126,37 +128,27 @@ p { margin: 0; }
 .version-logo.wm { font-size: 2.2rem; }
 .hero-media { position: relative; min-width: 0; padding-bottom: 16%; }
 .monitor img, .quote figcaption img { height: auto; }
-.modules img, .pillars img, .flow li img { height: auto; }
+.modules img, .flow li img { height: auto; }
 .monitor { background: #111; border: 8px solid #1a1a1a; border-radius: 14px; box-shadow: 0 30px 70px rgba(0,0,0,.45); overflow: hidden; width: 88%; margin-left: auto; }
 .monitor-sm { position: absolute; left: 0; bottom: 0; width: 58%; border-width: 6px; }
-@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .hero { background: linear-gradient(180deg, rgba(6,40,23,.9), rgba(6,40,23,.7)), url("../img/web/hero.jpg") center / cover; } }
+@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } .hero { background: linear-gradient(180deg, rgba(6,40,23,.9), rgba(6,40,23,.7)), url("../images/shared/hero.jpg") center / cover; background-image: linear-gradient(180deg, rgba(6,40,23,.9), rgba(6,40,23,.7)), image-set(url("../images/shared/hero-900.avif") type("image/avif"), url("../images/shared/hero-900.webp") type("image/webp"), url("../images/shared/hero.jpg") type("image/jpeg")); } }
 
 /* ---------- nosotros ---------- */
-.about { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
-.about-copy { display: grid; gap: 18px; min-width: 0; }
-.about-copy > p { color: var(--muted); max-width: 62ch; }
-.about-copy strong { color: var(--text); }
-.pillars { list-style: none; margin: 10px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.pillars li { display: grid; gap: 10px; align-content: start; }
-.pillars img { width: 64px; height: 64px; }
-.pillars b { display: block; font-size: 1.1rem; color: var(--geagro-green-900); }
-.pillars span { font-size: .93rem; color: var(--muted); line-height: 1.4; }
+
 .quote { margin: 0; background: var(--geagro-green-700); color: #fff; border-radius: 36px 36px 36px 8px; padding: 44px 36px 32px; position: relative; display: grid; gap: 24px; }
 .quote::before { content: "\201C"; position: absolute; top: -30px; left: 30px; font: 700 7rem/1 var(--font); color: var(--geagro-sun); }
-.quote blockquote { margin: 0; display: grid; gap: 10px; font-size: 1.18rem; line-height: 1.55; font-weight: 300; }
+.quote blockquote { margin: 0; display: grid; gap: 10px; font-size: 1.18rem; line-height: 1.55; font-weight: 400; }
 .quote strong { font-weight: 700; }
 .quote figcaption { display: flex; align-items: center; gap: 14px; }
 .quote figcaption img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 3px solid #fff; }
 .quote figcaption b { display: block; font-size: 1.05rem; }
 .quote figcaption span { font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; color: #cfe3d5; }
-@media (max-width: 900px) { .about { grid-template-columns: 1fr; } }
-@media (max-width: 560px) { .pillars { grid-template-columns: 1fr; } .pillars li { grid-template-columns: 56px 1fr; align-items: center; } .pillars img { width: 56px; height: 56px; } }
 
 /* ---------- versiones ---------- */
 .versions-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 .version-card { background: #fff; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-sm); display: flex; flex-direction: column; scroll-margin-top: 100px; }
-.version-campo .version-cover { background-image: url("../img/web/campo-bg.jpg"); background-image: image-set(url("../img/web/campo-bg.webp") type("image/webp"), url("../img/web/campo-bg.jpg") type("image/jpeg")); }
-.version-vid .version-cover { background-image: url("../img/web/vid-bg.jpg"); background-image: image-set(url("../img/web/vid-bg.webp") type("image/webp"), url("../img/web/vid-bg.jpg") type("image/jpeg")); }
+.version-campo .version-cover { background-image: url("../images/cereales/campo-bg.jpg"); background-image: image-set(url("../images/cereales/campo-bg-900.avif") type("image/avif"), url("../images/cereales/campo-bg-900.webp") type("image/webp"), url("../images/cereales/campo-bg.jpg") type("image/jpeg")); }
+.version-vid .version-cover { background-image: url("../images/vid/vid-bg.jpg"); background-image: image-set(url("../images/vid/vid-bg-900.avif") type("image/avif"), url("../images/vid/vid-bg-900.webp") type("image/webp"), url("../images/vid/vid-bg.jpg") type("image/jpeg")); }
 .version-cover { height: 190px; background-size: cover; background-position: center; position: relative; }
 .version-iso { position: absolute; left: 28px; bottom: -40px; width: 92px; height: 92px; background: #fff; border-radius: 50%; padding: 12px; box-shadow: var(--shadow-sm); }
 .version-body { padding: 56px 32px 32px; display: flex; flex-direction: column; gap: 18px; flex: 1; }
@@ -172,8 +164,6 @@ p { margin: 0; }
 @media (max-width: 900px) { .versions-grid { grid-template-columns: 1fr; } }
 @media (max-width: 460px) { .modules { grid-template-columns: 1fr; } .version-body { padding-inline: 22px; } }
 
-.flow-block { margin-top: 56px; display: grid; gap: 22px; }
-.flow-block h3 { color: var(--geagro-green-900); font-size: 1.6rem; }
 .flow { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; counter-reset: paso; }
 .flow li { counter-increment: paso; position: relative; display: grid; gap: 10px; justify-items: start; }
 .flow li img { width: 64px; height: 64px; }
@@ -257,13 +247,13 @@ p { margin: 0; }
 /* =========================================================
    Páginas de versión: /campo/ y /vid/
    ========================================================= */
-.hero-campo { background: linear-gradient(90deg, rgba(6,40,23,.94) 0%, rgba(6,40,23,.78) 50%, rgba(6,40,23,.35) 100%), url("../img/web/campo-bg.jpg") center / cover no-repeat;
-  background-image: linear-gradient(90deg, rgba(6,40,23,.94) 0%, rgba(6,40,23,.78) 50%, rgba(6,40,23,.35) 100%), image-set(url("../img/web/campo-bg.webp") type("image/webp"), url("../img/web/campo-bg.jpg") type("image/jpeg")); }
-.hero-vid { background: linear-gradient(90deg, rgba(40,20,42,.95) 0%, rgba(55,30,58,.8) 50%, rgba(40,20,42,.35) 100%), url("../img/web/vid-bg.jpg") center / cover no-repeat;
-  background-image: linear-gradient(90deg, rgba(40,20,42,.95) 0%, rgba(55,30,58,.8) 50%, rgba(40,20,42,.35) 100%), image-set(url("../img/web/vid-bg.webp") type("image/webp"), url("../img/web/vid-bg.jpg") type("image/jpeg")); }
+.hero-campo { background: linear-gradient(90deg, rgba(6,40,23,.94) 0%, rgba(6,40,23,.78) 50%, rgba(6,40,23,.35) 100%), url("../images/cereales/campo-bg.jpg") center / cover no-repeat;
+  background-image: linear-gradient(90deg, rgba(6,40,23,.94) 0%, rgba(6,40,23,.78) 50%, rgba(6,40,23,.35) 100%), image-set(url("../images/cereales/campo-bg-1600.avif") type("image/avif"), url("../images/cereales/campo-bg-1600.webp") type("image/webp"), url("../images/cereales/campo-bg.jpg") type("image/jpeg")); }
+.hero-vid { background: linear-gradient(90deg, rgba(40,20,42,.95) 0%, rgba(55,30,58,.8) 50%, rgba(40,20,42,.35) 100%), url("../images/vid/vid-bg.jpg") center / cover no-repeat;
+  background-image: linear-gradient(90deg, rgba(40,20,42,.95) 0%, rgba(55,30,58,.8) 50%, rgba(40,20,42,.35) 100%), image-set(url("../images/vid/vid-bg-1600.avif") type("image/avif"), url("../images/vid/vid-bg-1600.webp") type("image/webp"), url("../images/vid/vid-bg.jpg") type("image/jpeg")); }
 @media (max-width: 900px) {
-  .hero-campo { background: linear-gradient(180deg, rgba(6,40,23,.92), rgba(6,40,23,.75)), url("../img/web/campo-bg.jpg") center / cover; }
-  .hero-vid { background: linear-gradient(180deg, rgba(40,20,42,.93), rgba(55,30,58,.78)), url("../img/web/vid-bg.jpg") center / cover; }
+.hero-campo { background: linear-gradient(180deg, rgba(6,40,23,.92), rgba(6,40,23,.75)), url("../images/cereales/campo-bg.jpg") center / cover; background-image: linear-gradient(180deg, rgba(6,40,23,.92), rgba(6,40,23,.75)), image-set(url("../images/cereales/campo-bg-900.avif") type("image/avif"), url("../images/cereales/campo-bg-900.webp") type("image/webp"), url("../images/cereales/campo-bg.jpg") type("image/jpeg")); }
+.hero-vid { background: linear-gradient(180deg, rgba(40,20,42,.93), rgba(55,30,58,.78)), url("../images/vid/vid-bg.jpg") center / cover; background-image: linear-gradient(180deg, rgba(40,20,42,.93), rgba(55,30,58,.78)), image-set(url("../images/vid/vid-bg-900.avif") type("image/avif"), url("../images/vid/vid-bg-900.webp") type("image/webp"), url("../images/vid/vid-bg.jpg") type("image/jpeg")); }
 }
 .hero-media-single { padding-bottom: 0; }
 .hero-media-single .monitor { width: 100%; }
@@ -347,16 +337,13 @@ p { margin: 0; }
 .how-steps li:not(:last-child)::after { content: "→"; position: absolute; top: 34px; left: calc(50% + 56px); font-size: 1.5rem; line-height: 1; color: var(--geagro-green-500); }
 @media (max-width: 1080px) { .how-grid { grid-template-columns: 1fr; gap: 40px; } }
 @media (max-width: 720px) {
-  .how-steps { grid-template-columns: 1fr 1fr; row-gap: 36px; }
-  .how-steps li::after { display: none; }
+.how-steps { grid-template-columns: 1fr 1fr; row-gap: 36px; }
+.how-steps li::after { display: none; }
 }
 @media (max-width: 420px) { .how-steps { grid-template-columns: 1fr; } .how-steps li { grid-template-columns: 80px 1fr; column-gap: 16px; } .how-ico { width: 72px; height: 72px; grid-row: span 3; margin: 0; } .how-ico svg { width: 34px; height: 34px; } }
 
 /* ---------- Nosotros compacto ---------- */
-.about-lite { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: start; }
-.about-lite-copy { display: grid; gap: 16px; color: var(--muted); }
-.about-lite-copy strong { color: var(--text); }
-@media (max-width: 860px) { .about-lite { grid-template-columns: 1fr; gap: 20px; } }
+
 
 /* ---------- Brochure + cita al lado del formulario ---------- */
 .convert-side { display: grid; gap: 56px; min-width: 0; }
@@ -365,8 +352,8 @@ p { margin: 0; }
 
 /* ---------- CTA con foto (landing) ---------- */
 .cta-photo { padding-block: clamp(64px, 8vw, 104px);
-  background: linear-gradient(90deg, rgba(6,40,23,.97) 0%, rgba(6,40,23,.9) 30%, rgba(6,40,23,.35) 58%, rgba(6,40,23,0) 78%), url("../img/web/cta-productor.jpg") right 18% / cover no-repeat;
-  background-image: linear-gradient(90deg, rgba(6,40,23,.97) 0%, rgba(6,40,23,.9) 30%, rgba(6,40,23,.35) 58%, rgba(6,40,23,0) 78%), image-set(url("../img/web/cta-productor.webp") type("image/webp"), url("../img/web/cta-productor.jpg") type("image/jpeg")); background-position: 0 0, right 18%; }
+  background: linear-gradient(90deg, rgba(6,40,23,.97) 0%, rgba(6,40,23,.9) 30%, rgba(6,40,23,.35) 58%, rgba(6,40,23,0) 78%), url("../images/shared/cta-productor.jpg") right 18% / cover no-repeat;
+  background-image: linear-gradient(90deg, rgba(6,40,23,.97) 0%, rgba(6,40,23,.9) 30%, rgba(6,40,23,.35) 58%, rgba(6,40,23,0) 78%), image-set(url("../images/shared/cta-productor.webp") type("image/webp"), url("../images/shared/cta-productor.jpg") type("image/jpeg")); background-position: 0 0, right 18%; }
 .cta-photo::after { display: none; }
 .cta-copy { position: relative; z-index: 1; display: grid; gap: 18px; max-width: 640px; }
 .cta-photo .eyebrow { color: var(--geagro-sun); }
@@ -378,7 +365,7 @@ p { margin: 0; }
 .btn-ghost-light { display: inline-flex; align-items: center; gap: 14px; padding: .95em 1.7em; border: 2px solid #fff; border-radius: var(--radius-pill); color: #fff; font-weight: 700; font-size: 1rem; transition: background-color .15s, color .15s; }
 .btn-ghost-light:hover { background: #fff; color: var(--geagro-green-900); }
 @media (max-width: 860px) {
-  .cta-photo { background: linear-gradient(180deg, rgba(6,40,23,.93) 0%, rgba(6,40,23,.82) 60%, rgba(6,40,23,.6) 100%), url("../img/web/cta-productor.jpg") 70% center / cover no-repeat; }
+.cta-photo { background: linear-gradient(180deg, rgba(6,40,23,.93) 0%, rgba(6,40,23,.82) 60%, rgba(6,40,23,.6) 100%), url("../images/shared/cta-productor.jpg") 70% center / cover no-repeat; }
 }
 
 /* ---------- FAQ compacto (una abierta a la vez) ---------- */
@@ -391,7 +378,7 @@ p { margin: 0; }
 .faq-list details[open] { border-color: #b9d3bd; }
 .faq-list summary { padding: 15px 0; font-weight: 400; font-size: 1.02rem; color: var(--text); align-items: center; }
 .faq-list details[open] summary { font-weight: 600; }
-.faq-list summary::after { font-weight: 300; flex: none; }
+.faq-list summary::after { font-weight: 400; flex: none; }
 .faq-list details p { padding-bottom: 18px; margin-top: -4px; }
 .faq-all { background: none; border: 0; padding: 0; cursor: pointer; font-family: inherit; text-align: left; justify-self: start; }
 
@@ -399,8 +386,8 @@ p { margin: 0; }
 #faq { background: #fff; }
 
 /* ---------- Nosotros GENEOS (fondo bg-geneos + 3 datos) ---------- */
-.about-geneos { background: #f3f9f3 url("../img/web/bg-geneos.jpg") left bottom / cover no-repeat;
-  background-image: image-set(url("../img/web/bg-geneos.webp") type("image/webp"), url("../img/web/bg-geneos.jpg") type("image/jpeg")); }
+.about-geneos { background: #f3f9f3 url("../images/backgrounds/bg-geneos.jpg") left bottom / cover no-repeat;
+  background-image: image-set(url("../images/backgrounds/bg-geneos.webp") type("image/webp"), url("../images/backgrounds/bg-geneos.jpg") type("image/jpeg")); }
 .about-g { display: grid; grid-template-columns: 1fr 1.15fr; gap: 64px; align-items: start; }
 .about-g-head { display: grid; gap: 14px; }
 .about-g-head h2 { font-size: clamp(2rem, 3.6vw, 3rem); line-height: 1.1; }
@@ -417,10 +404,10 @@ p { margin: 0; }
 .about-close::before { content: ""; position: absolute; top: 0; left: 0; width: 72px; height: 2px; background: #a9cfae; }
 @media (max-width: 960px) { .about-g { grid-template-columns: 1fr; gap: 28px; } }
 @media (max-width: 620px) {
-  .about-stats { grid-template-columns: 1fr; gap: 22px; }
-  .about-stats li { padding: 0; border-left: 0; grid-template-columns: 64px 1fr; column-gap: 16px; }
-  .about-ico { width: 64px; height: 64px; margin: 0; grid-row: span 2; }
-  .about-ico img { width: 34px; height: 34px; }
+.about-stats { grid-template-columns: 1fr; gap: 22px; }
+.about-stats li { padding: 0; border-left: 0; grid-template-columns: 64px 1fr; column-gap: 16px; }
+.about-ico { width: 64px; height: 64px; margin: 0; grid-row: span 2; }
+.about-ico img { width: 34px; height: 34px; }
 }
 
 /* Smartphone: ocultar columna Brochure + cita (queda solo el formulario de demo) */
@@ -438,7 +425,7 @@ p { margin: 0; }
 .hero > .container { position: relative; z-index: 2; }
 
 /* ---------- Cómo funciona con ilustración de fondo ---------- */
-.how { background: #f1f8f1 url("../img/web/bg-como-funciona.webp") center bottom / cover no-repeat;
+.how { background: #f1f8f1 url("../images/backgrounds/bg-como-funciona.webp") center bottom / cover no-repeat;
   padding-bottom: clamp(140px, 16vw, 240px); }
 .how-ico { background: #fff; box-shadow: 0 8px 22px rgba(11,52,34,.08); }
 @media (max-width: 720px) { .how { background-size: auto 100%; background-position: 30% bottom; padding-bottom: 120px; } }
@@ -452,13 +439,13 @@ p { margin: 0; }
 
 /* "Qué incluye" en mobile: 2 columnas, solo ícono + título (sin párrafo) */
 @media (max-width: 620px) {
-  .features { grid-template-columns: 1fr 1fr; gap: 12px; }
-  .features li { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 10px; padding: 18px 12px; }
-  .features img { width: 48px; }
-  .features h3 { font-size: 1rem; line-height: 1.25; margin: 0; }
-  .features p { display: none; }
-  .features li { align-content: start; }
-  .features li:last-child:nth-child(odd) { grid-column: 1 / -1; }
+.features { grid-template-columns: 1fr 1fr; gap: 12px; }
+.features li { grid-template-columns: 1fr; justify-items: center; text-align: center; gap: 10px; padding: 18px 12px; }
+.features img { width: 48px; }
+.features h3 { font-size: 1rem; line-height: 1.25; margin: 0; }
+.features p { display: none; }
+.features li { align-content: start; }
+.features li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 }
 
 /* VID: sección Brochure + Demo con predominio violeta */
@@ -508,3 +495,12 @@ p { margin: 0; }
 .dd-item.is-current { background: var(--geagro-green-50); pointer-events: none; }
 .dd-vid.is-current { background: var(--geagro-purple-50); }
 .dd-item.is-current small { color: var(--text); }
+
+/* ---------- Accesibilidad: saltar al contenido ---------- */
+.skip-link { position: absolute; left: 12px; top: -60px; z-index: 100; background: #fff; color: var(--geagro-green-900); padding: 10px 16px; border-radius: 10px; font-weight: 700; box-shadow: var(--shadow-sm); transition: top .15s; }
+.skip-link:focus { top: 12px; }
+
+/* ---------- Footer: enlaces a las páginas ---------- */
+.footer-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 26px; margin-top: 28px; font-size: .9rem; }
+.footer-nav a { color: rgba(255,255,255,.75); }
+.footer-nav a:hover { color: #fff; text-decoration: underline; text-underline-offset: 3px; }

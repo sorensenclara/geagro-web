@@ -3,171 +3,208 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GEAGRO | Software de gestión agropecuaria · GENEOS</title>
-<meta name="description" content="GEAGRO, software de gestión agropecuaria de GENEOS: software agrícola para la gestión de campos y campañas, y gestión de viñedos con alertas.">
+<title>GEAGRO | Software de gestión agropecuaria para productores</title>
+<meta name="description" content="Software de gestión agropecuaria para productores y equipos técnicos: campañas, lotes, insumos y acopio con GEAGRO CEREALES, y viñedos con GEAGRO VID.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://sorensenclara.github.io/geagro-web/">
 <meta name="theme-color" content="#0b3422">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_AR">
 <meta property="og:site_name" content="GEAGRO">
-<meta property="og:title" content="GEAGRO | Software de gestión agropecuaria">
-<meta property="og:description" content="Software agrícola para la gestión de campos y campañas, y gestión de viñedos. Versiones CEREALES y VID, por la Cooperativa GENEOS.">
+<meta property="og:title" content="GEAGRO | Software de gestión agropecuaria para productores">
+<meta property="og:description" content="Software de gestión agropecuaria para productores: GEAGRO CEREALES para campañas, lotes y acopio, y GEAGRO VID para viñedos. Por la Cooperativa GENEOS.">
 <meta property="og:url" content="https://sorensenclara.github.io/geagro-web/">
-<meta property="og:image" content="https://sorensenclara.github.io/geagro-web/assets/img/web/og-image.jpg">
+<meta property="og:image" content="https://sorensenclara.github.io/geagro-web/assets/images/shared/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="GEAGRO, software de gestión agropecuaria, versiones CEREALES y VID">
+<meta property="og:image:alt" content="GEAGRO, software de gestión agropecuaria: versiones CEREALES y VID">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@CoopGENEOS">
-<meta name="twitter:title" content="GEAGRO | Software de gestión agropecuaria">
-<meta name="twitter:description" content="Software agrícola para la gestión de campos y campañas, y gestión de viñedos. Versiones CEREALES y VID, por la Cooperativa GENEOS.">
-<meta name="twitter:image" content="https://sorensenclara.github.io/geagro-web/assets/img/web/og-image.jpg">
-<link rel="preload" as="image" href="assets/img/web/hero.webp" type="image/webp" fetchpriority="high">
+<meta name="twitter:title" content="GEAGRO | Software de gestión agropecuaria para productores">
+<meta name="twitter:description" content="Software de gestión agropecuaria para productores: GEAGRO CEREALES para campañas, lotes y acopio, y GEAGRO VID para viñedos. Por la Cooperativa GENEOS.">
+<meta name="twitter:image" content="https://sorensenclara.github.io/geagro-web/assets/images/shared/og-image.jpg">
+<meta name="twitter:image:alt" content="GEAGRO, software de gestión agropecuaria: versiones CEREALES y VID">
+<link rel="preload" as="image" href="assets/images/shared/hero-1920.avif" type="image/avif" media="(min-width: 901px)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/images/shared/hero-900.avif" type="image/avif" media="(max-width: 900px)" fetchpriority="high">
 <link rel="icon" href="favicon.ico" sizes="48x48">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png">
-<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/apple-touch-icon.png">
-<link rel="manifest" href="assets/icons/site.webmanifest">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon/apple-touch-icon.png">
+<link rel="manifest" href="assets/icons/favicon/site.webmanifest">
+<link rel="preload" href="assets/fonts/titillium-web-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/titillium-web-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/css/geagro-landing.css">
 <script type="application/ld+json">
-[
- {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://sorensenclara.github.io/geagro-web/#geneos",
-  "name": "Cooperativa GENEOS Ltda.",
-  "alternateName": "GENEOS",
-  "url": "https://geneos.coop.ar/",
-  "logo": "https://sorensenclara.github.io/geagro-web/assets/icons/isologo-geagro.svg",
-  "email": "info@geneos.com.ar",
-  "telephone": "+54 9 2494 521418",
-  "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "Alem 1015",
-   "addressLocality": "Tandil",
-   "addressRegion": "Buenos Aires",
-   "addressCountry": "AR"
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://sorensenclara.github.io/geagro-web/#geneos",
+   "name": "Cooperativa GENEOS Ltda.",
+   "alternateName": "GENEOS",
+   "url": "https://geneos.coop.ar/",
+   "logo": {
+    "@type": "ImageObject",
+    "url": "https://sorensenclara.github.io/geagro-web/assets/icons/brand/geneos-logo.png",
+    "width": 640,
+    "height": 220
+   },
+   "email": "info@geneos.com.ar",
+   "telephone": "+54 9 2494 521418",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Alem 1015",
+    "addressLocality": "Tandil",
+    "addressRegion": "Buenos Aires",
+    "addressCountry": "AR"
+   },
+   "sameAs": [
+    "https://www.facebook.com/coopgeneos/",
+    "https://www.instagram.com/coopgeneos/",
+    "https://ar.linkedin.com/company/geneos-coop"
+   ]
   },
-  "sameAs": [
-   "https://www.facebook.com/coopgeneos/",
-   "https://www.instagram.com/coopgeneos/",
-   "https://twitter.com/CoopGENEOS",
-   "https://ar.linkedin.com/company/geneos-coop"
-  ]
- },
- {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "@id": "https://sorensenclara.github.io/geagro-web/#web",
-  "url": "https://sorensenclara.github.io/geagro-web/",
-  "name": "GEAGRO",
-  "inLanguage": "es-AR",
-  "publisher": {
-   "@id": "https://sorensenclara.github.io/geagro-web/#geneos"
-  }
- },
- {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "GEAGRO CEREALES",
-  "applicationCategory": "BusinessApplication",
-  "applicationSubCategory": "Software de gestión agrícola",
-  "operatingSystem": "Web",
-  "url": "https://sorensenclara.github.io/geagro-web/cereales/",
-  "image": "https://sorensenclara.github.io/geagro-web/assets/img/web/panel-campo.jpg",
-  "description": "Software de gestión agrícola para planificar, ejecutar y controlar cada campaña: lotes, insumos, labores, costos, transporte y acopio de granos.",
-  "publisher": {
-   "@id": "https://sorensenclara.github.io/geagro-web/#geneos"
-  }
- },
- {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "GEAGRO VID",
-  "applicationCategory": "BusinessApplication",
-  "applicationSubCategory": "Software de gestión de viñedos",
-  "operatingSystem": "Web",
-  "url": "https://sorensenclara.github.io/geagro-web/vid/",
-  "image": "https://sorensenclara.github.io/geagro-web/assets/img/web/panel-vid.jpg",
-  "description": "Software para viñedos que integra información climática, fenológica y sanitaria para detectar riesgos, generar alertas agronómicas y priorizar acciones.",
-  "publisher": {
-   "@id": "https://sorensenclara.github.io/geagro-web/#geneos"
-  }
- },
- {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-   {
-    "@type": "Question",
-    "name": "¿Qué es GEAGRO?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Es un software de gestión agropecuaria desarrollado por la Cooperativa GENEOS. Centraliza la información productiva, climática y económica de tu establecimiento y la transforma en alertas, órdenes de trabajo e indicadores para decidir a tiempo."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "¿Qué diferencia hay entre GEAGRO CEREALES y GEAGRO VID?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "GEAGRO CEREALES está pensada para la gestión agrícola de campañas: lotes, insumos, labores, costos, transporte y acopio de granos. VID está especializada en viñedos: integra datos climáticos, estado fenológico y riesgos sanitarios para anticipar problemas y priorizar acciones."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "¿Para quién está pensado?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Para pequeños y medianos productores y para los equipos técnicos que los acompañan. GEAGRO se adapta a la forma en que cada productor gestiona hoy su información."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "¿Cómo ayuda con el clima y las alertas?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Registra variables como lluvias, temperatura, humedad y vientos. Con esos datos detecta condiciones críticas y riesgos sanitarios, genera alertas y te sugiere la próxima acción según cada situación."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "¿Puedo controlar el grano en silos propios y en acopiadores?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Sí, con GEAGRO CEREALES. En acopio propio gestionás silos, stock por especie y campaña, ingresos, salidas, transferencias y calidad del grano. En acopio en terceros registrás acopiadores, certificados de depósito, servicios realizados y retiros."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "¿Puedo comparar costos estimados y reales?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Sí. Analizás costos por lote, comparás inversión estimada contra real e insumos necesarios contra comprados, y evaluás el rendimiento de cada campaña para mejorar la siguiente."
-    }
-   },
-   {
-    "@type": "Question",
-    "name": "¿Cómo empiezo?",
-    "acceptedAnswer": {
-     "@type": "Answer",
-     "text": "Solicitá una demo con el formulario de esta página o por WhatsApp. Te contactamos para conocer tu producción y mostrarte la versión que mejor se ajusta."
-    }
+  {
+   "@type": "WebSite",
+   "@id": "https://sorensenclara.github.io/geagro-web/#web",
+   "url": "https://sorensenclara.github.io/geagro-web/",
+   "name": "GEAGRO",
+   "inLanguage": "es-AR",
+   "publisher": {
+    "@id": "https://sorensenclara.github.io/geagro-web/#geneos"
    }
-  ]
- }
-]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://sorensenclara.github.io/geagro-web/cereales/#software",
+   "name": "GEAGRO CEREALES",
+   "applicationCategory": "BusinessApplication",
+   "applicationSubCategory": "Software de gestión agrícola",
+   "operatingSystem": "Web",
+   "url": "https://sorensenclara.github.io/geagro-web/cereales/",
+   "image": "https://sorensenclara.github.io/geagro-web/assets/images/cereales/panel-campo.jpg",
+   "description": "Software de gestión agrícola para planificar campañas, controlar lotes, labores, insumos y costos, y seguir el acopio de granos. Por la Cooperativa GENEOS.",
+   "inLanguage": "es-AR",
+   "publisher": {
+    "@id": "https://sorensenclara.github.io/geagro-web/#geneos"
+   },
+   "isPartOf": {
+    "@id": "https://sorensenclara.github.io/geagro-web/#web"
+   },
+   "featureList": [
+    "Gestión de campos y lotes",
+    "Planificación de campañas agrícolas",
+    "Gestión de insumos",
+    "Registro de labores y operaciones",
+    "Control de costos productivos",
+    "Órdenes de trabajo",
+    "Indicadores y gráficos productivos",
+    "Logística y transporte",
+    "Gestión de acopio"
+   ]
+  },
+  {
+   "@type": "SoftwareApplication",
+   "@id": "https://sorensenclara.github.io/geagro-web/vid/#software",
+   "name": "GEAGRO VID",
+   "applicationCategory": "BusinessApplication",
+   "applicationSubCategory": "Software para viñedos y gestión vitivinícola",
+   "operatingSystem": "Web",
+   "url": "https://sorensenclara.github.io/geagro-web/vid/",
+   "image": "https://sorensenclara.github.io/geagro-web/assets/images/vid/panel-vid.jpg",
+   "description": "Software para la gestión de viñedos: clima, fenología y riesgos sanitarios por cuartel, plan técnico y labores del viñedo. Por la Cooperativa GENEOS.",
+   "inLanguage": "es-AR",
+   "publisher": {
+    "@id": "https://sorensenclara.github.io/geagro-web/#geneos"
+   },
+   "isPartOf": {
+    "@id": "https://sorensenclara.github.io/geagro-web/#web"
+   },
+   "featureList": [
+    "Gestión de viñedos y cultivos",
+    "Plan técnico del viñedo",
+    "Alertas agronómicas",
+    "Integración de datos climáticos",
+    "Registro de intervenciones",
+    "Seguimiento de órdenes de trabajo",
+    "Estado del viñedo en tiempo real",
+    "Evaluación del desempeño"
+   ]
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://sorensenclara.github.io/geagro-web/#faq",
+   "url": "https://sorensenclara.github.io/geagro-web/",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "¿Qué es GEAGRO?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Es un software de gestión agropecuaria desarrollado por la Cooperativa GENEOS. Centraliza la información productiva, climática y económica de tu establecimiento y la transforma en alertas, órdenes de trabajo e indicadores para decidir a tiempo."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Qué diferencia hay entre GEAGRO CEREALES y GEAGRO VID?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "GEAGRO CEREALES está pensada para la gestión agrícola de campañas: lotes, insumos, labores, costos, transporte y acopio de granos. VID está especializada en viñedos: integra datos climáticos, estado fenológico y riesgos sanitarios para anticipar problemas y priorizar acciones."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Para quién está pensado?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Para pequeños y medianos productores y para los equipos técnicos que los acompañan. GEAGRO se adapta a la forma en que cada productor gestiona hoy su información."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cómo ayuda con el clima y las alertas?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Registra variables como lluvias, temperatura, humedad y vientos. Con esos datos detecta condiciones críticas y riesgos sanitarios, genera alertas y te sugiere la próxima acción según cada situación."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Puedo controlar el grano en silos propios y en acopiadores?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí, con GEAGRO CEREALES. En acopio propio gestionás silos, stock por especie y campaña, ingresos, salidas, transferencias y calidad del grano. En acopio en terceros registrás acopiadores, certificados de depósito, servicios realizados y retiros."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Puedo comparar costos estimados y reales?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Sí. Analizás costos por lote, comparás inversión estimada contra real e insumos necesarios contra comprados, y evaluás el rendimiento de cada campaña para mejorar la siguiente."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "¿Cómo empiezo?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Solicitá una demo con el formulario de esta página o por WhatsApp. Te contactamos para conocer tu producción y mostrarte la versión que mejor se ajusta."
+     }
+    }
+   ]
+  }
+ ]
+}
 </script>
 </head>
 <body id="inicio">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="#inicio" aria-label="GEAGRO, ir al inicio"><img src="assets/icons/logo-geagro.svg" alt="GEAGRO Software de gestión agropecuaria" width="200" height="43"></a>
+    <a class="brand" href="#inicio" aria-label="GEAGRO, ir al inicio"><img src="assets/icons/brand/logo-geagro.svg" alt="GEAGRO Software de gestión agropecuaria" width="200" height="43"></a>
 
     <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">
       <span></span><span></span><span></span>
@@ -182,11 +219,11 @@
         </button>
         <div class="dropdown-menu" id="ddMenu" hidden>
           <a href="cereales/" class="dd-item dd-campo">
-            <img src="assets/icons/isologo-campo.svg" alt="" width="40" height="40">
+            <img src="assets/icons/brand/isologo-campo.svg" alt="" width="40" height="40">
             <span><strong>GEAGRO CEREALES</strong><small>Campañas agrícolas, insumos, costos y acopio</small></span>
           </a>
           <a href="vid/" class="dd-item dd-vid">
-            <img src="assets/icons/isologo-vid.svg" alt="" width="40" height="40">
+            <img src="assets/icons/brand/isologo-vid.svg" alt="" width="40" height="40">
             <span><strong>GEAGRO VID</strong><small>Viñedos: clima, fenología y sanidad</small></span>
           </a>
         </div>
@@ -199,13 +236,13 @@
   </div>
 </header>
 
-<main>
+<main id="contenido">
 
   <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow eyebrow-light hero-by">by <img src="assets/icons/GENEOS.svg" alt="GENEOS" width="88" height="28"></p>
+        <p class="eyebrow eyebrow-light hero-by">by <img src="assets/icons/brand/GENEOS.svg" alt="GENEOS" width="88" height="28"></p>
         <h1 class="hero-title"><span>Software de gestión</span> <span>agropecuaria para</span> <span class="hl">mejores decisiones</span></h1>
         <p class="hero-lead">GEAGRO ordena la información de tu campo o tu viñedo y te indica qué hacer, cuándo hacerlo y con qué prioridad.</p>
         <div class="hero-actions">
@@ -214,8 +251,8 @@
         </div>
       </div>
       <div class="hero-media">
-        <div class="monitor"><picture><source srcset="assets/img/web/panel-campo.webp" type="image/webp"><img src="assets/img/web/panel-campo.jpg" alt="Panel de GEAGRO CEREALES, software agrícola para la gestión de campos y campañas" width="615" height="410" fetchpriority="high"></picture></div>
-        <div class="monitor monitor-sm"><picture><source srcset="assets/img/web/panel-vid.webp" type="image/webp"><img src="assets/img/web/panel-vid.jpg" alt="Panel de GEAGRO VID, software de gestión de viñedos con alertas de clima y sanidad" width="864" height="699" decoding="async"></picture></div>
+        <div class="monitor"><picture><source srcset="assets/images/cereales/panel-campo.webp" type="image/webp"><img src="assets/images/cereales/panel-campo.jpg" alt="Panel de GEAGRO CEREALES, software agrícola para la gestión de campos y campañas" width="615" height="410" fetchpriority="high"></picture></div>
+        <div class="monitor monitor-sm"><picture><source srcset="assets/images/vid/panel-vid.webp" type="image/webp"><img src="assets/images/vid/panel-vid.jpg" alt="Panel de GEAGRO VID, software de gestión de viñedos con alertas de clima y sanidad" width="864" height="699" decoding="async"></picture></div>
       </div>
     </div>
   </section>
@@ -226,7 +263,7 @@
       <div class="how-head">
         <p class="eyebrow">Cómo funciona</p>
         <h2>Del dato técnico a la acción<span class="how-dot">.</span></h2>
-        <p class="how-lead">Una gestión simple y conectada, desde la planificación hasta los resultados.</p>
+        <p class="how-lead">Un sistema de gestión agropecuaria simple y conectado, desde la planificación hasta los resultados.</p>
         <a href="#versiones" class="how-more">Conocer más <span aria-hidden="true">→</span></a>
       </div>
       <ol class="how-steps">
@@ -269,22 +306,22 @@
       <div class="versions-grid">
         <article class="version-card version-campo" id="campo">
           <div class="version-cover">
-            <img src="assets/icons/isologo-campo.svg" alt="" loading="lazy" decoding="async" width="64" height="64" class="version-iso">
+            <img src="assets/icons/brand/isologo-campo.svg" alt="" loading="lazy" decoding="async" width="64" height="64" class="version-iso">
           </div>
           <div class="version-body">
             <h3 class="wm wm-campo version-logo">GE<em>AGRO</em> <b>CEREALES</b></h3>
             <p>Para productores y equipos técnicos que necesitan <strong>planificar, ejecutar y controlar cada campaña agrícola</strong>. Resuelve la <strong>gestión de campos, lotes y campañas</strong>, con insumos y labores en un solo sistema, desde la planificación hasta el análisis final, con trazabilidad del grano en silos propios y en acopiadores.</p>
             <ul class="modules">
-              <li><img src="assets/icons/campo-campo.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Campos y lotes</li>
-              <li><img src="assets/icons/plan-tecnico.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Plan técnico</li>
-              <li><img src="assets/icons/clima.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Variables climáticas</li>
-              <li><img src="assets/icons/campo-operaciones.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Labores</li>
-              <li><img src="assets/icons/campo-insumos.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Insumos</li>
-              <li><img src="assets/icons/campo-compras.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Compras e inventario</li>
-              <li><img src="assets/icons/campo-acopio.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Acopio</li>
-              <li><img src="assets/icons/campo-transporte.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Transporte</li>
-              <li><img src="assets/icons/campo-graficos.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Indicadores y alertas</li>
-              <li><img src="assets/icons/campo-control.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Rendimientos y costos</li>
+              <li><img src="assets/icons/cereales/campo-campo.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Campos y lotes</li>
+              <li><img src="assets/icons/shared/plan-tecnico.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Plan técnico</li>
+              <li><img src="assets/icons/shared/clima.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Variables climáticas</li>
+              <li><img src="assets/icons/cereales/campo-operaciones.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Labores</li>
+              <li><img src="assets/icons/cereales/campo-insumos.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Insumos</li>
+              <li><img src="assets/icons/cereales/campo-compras.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Compras e inventario</li>
+              <li><img src="assets/icons/cereales/campo-acopio.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Acopio</li>
+              <li><img src="assets/icons/cereales/campo-transporte.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Transporte</li>
+              <li><img src="assets/icons/cereales/campo-graficos.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Indicadores y alertas</li>
+              <li><img src="assets/icons/cereales/campo-control.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Rendimientos y costos</li>
             </ul>
             <div class="version-actions"><a href="cereales/" class="btn btn-campo">Conocer GEAGRO CEREALES</a><a href="#demo" class="version-demo" data-version="campo">Solicitar demo →</a></div>
           </div>
@@ -292,20 +329,20 @@
 
         <article class="version-card version-vid" id="vid">
           <div class="version-cover">
-            <img src="assets/icons/isologo-vid.svg" alt="" loading="lazy" decoding="async" width="64" height="64" class="version-iso">
+            <img src="assets/icons/brand/isologo-vid.svg" alt="" loading="lazy" decoding="async" width="64" height="64" class="version-iso">
           </div>
           <div class="version-body">
             <h3 class="wm wm-vid version-logo">GE<em>AGRO</em> <b>VID</b></h3>
             <p><strong>Gestión de viñedos</strong> para productores y equipos técnicos que necesitan interpretar información <strong>climática, fenológica y sanitaria</strong>. Detecta riesgos, genera alertas agronómicas y prioriza acciones para actuar a tiempo en cada etapa del cultivo.</p>
             <ul class="modules">
-              <li><img src="assets/icons/vid-campo.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Viñedos y cuarteles</li>
-              <li><img src="assets/icons/plan-tecnico.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Plan técnico del viñedo</li>
-              <li><img src="assets/icons/clima.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Clima y variables productivas</li>
-              <li><img src="assets/icons/vid-operaciones.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Labores</li>
-              <li><img src="assets/icons/vid-insumos.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Insumos</li>
-              <li><img src="assets/icons/vid-compras.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Compras e inventario</li>
-              <li><img src="assets/icons/vid-graficos.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Indicadores y alertas</li>
-              <li><img src="assets/icons/vid-control.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Rendimientos y costos</li>
+              <li><img src="assets/icons/vid/vid-campo.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Viñedos y cuarteles</li>
+              <li><img src="assets/icons/shared/plan-tecnico.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Plan técnico del viñedo</li>
+              <li><img src="assets/icons/shared/clima.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Clima y variables productivas</li>
+              <li><img src="assets/icons/vid/vid-operaciones.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Labores</li>
+              <li><img src="assets/icons/vid/vid-insumos.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Insumos</li>
+              <li><img src="assets/icons/vid/vid-compras.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Compras e inventario</li>
+              <li><img src="assets/icons/vid/vid-graficos.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Indicadores y alertas</li>
+              <li><img src="assets/icons/vid/vid-control.svg" alt="" loading="lazy" decoding="async" width="64" height="64">Rendimientos y costos</li>
             </ul>
             <div class="version-actions"><a href="vid/" class="btn btn-vid">Conocer GEAGRO VID</a><a href="#demo" class="version-demo" data-version="vid">Solicitar demo →</a></div>
           </div>
@@ -357,7 +394,7 @@
             <p>soluciones que pueden evolucionar</p>
           </li>
         </ul>
-        <p class="about-close">GEAGRO nace de esa experiencia aplicada a la <strong>gestión agropecuaria.</strong></p>
+        <p class="about-close">GEAGRO nace de esa experiencia: <strong>software para el agro</strong>, pensado para la gestión agropecuaria de pequeños y medianos productores.</p>
       </div>
     </div>
   </section>
@@ -369,7 +406,6 @@
         <p class="eyebrow">Preguntas frecuentes</p>
         <h2>Lo que más nos preguntan<span class="how-dot">.</span></h2>
         <p>¿Tenés otra duda? Escribinos o dejanos tus datos en el formulario de demo.</p>
-        <button type="button" class="how-more faq-all" id="faqAll" aria-expanded="false">Ver todas las preguntas <span aria-hidden="true">→</span></button>
       </div>
       <div class="faq-list">
         <details name="faq">
@@ -392,7 +428,7 @@
           <summary>¿Puedo controlar el grano en silos propios y en acopiadores?</summary>
           <p>Sí, con GEAGRO CEREALES. En acopio propio gestionás silos, stock por especie y campaña, ingresos, salidas, transferencias y calidad del grano. En acopio en terceros registrás acopiadores, certificados de depósito, servicios realizados y retiros.</p>
         </details>
-        <details name="faq" class="faq-extra" hidden>
+        <details name="faq">
           <summary>¿Puedo comparar costos estimados y reales?</summary>
           <p>Sí. Analizás costos por lote, comparás inversión estimada contra real e insumos necesarios contra comprados, y evaluás el rendimiento de cada campaña para mejorar la siguiente.</p>
         </details>
@@ -412,7 +448,7 @@
           <p class="eyebrow">Brochure</p>
           <h2>Llevate toda la información</h2>
           <div class="brochure-file">
-            <img src="assets/icons/isologo-geagro.svg" alt="" loading="lazy" decoding="async" width="56" height="56">
+            <img src="assets/icons/brand/isologo-geagro.svg" alt="" loading="lazy" decoding="async" width="56" height="56">
             <span><b>Brochure GEAGRO</b>PDF · 15 páginas · 4,2 MB</span>
           </div>
           <p>Módulos, funcionalidades y paneles de GEAGRO CEREALES y GEAGRO VID, para compartir con tu equipo técnico.</p>
@@ -427,7 +463,7 @@
           <p>GEAGRO se adapta a las posibilidades de gestión de información de pequeños y medianos productores, para que sepan <strong>qué hacer, cuándo hacerlo</strong> y tengan información para tomar mejores decisiones.</p>
         </blockquote>
         <figcaption>
-          <picture><source srcset="assets/img/web/jose-maria.webp" type="image/webp"><img src="assets/img/web/jose-maria.jpg" alt="José María Fantasía" width="64" height="64" loading="lazy" decoding="async"></picture>
+          <picture><source srcset="assets/images/shared/jose-maria.webp" type="image/webp"><img src="assets/images/shared/jose-maria.jpg" alt="José María Fantasía" width="64" height="64" loading="lazy" decoding="async"></picture>
           <span><b>José María Fantasía</b>Ingeniero en Sistemas · Analista funcional</span>
         </figcaption>
       </figure>
@@ -490,6 +526,11 @@
       <a href="https://www.facebook.com/coopgeneos/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.500 20v-6.600h2.200l.4-2.600h-2.600V9.200c0-.8.2-1.300 1.300-1.300h1.400V5.600c-.2 0-1.100-.1-2.100-.1-2.100 0-3.500 1.300-3.500 3.600v1.900H8.300v2.600h2.300V20h2.900Z"/></svg></a>
       <a href="https://ar.linkedin.com/company/geneos-coop" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M7.200 9.500H4.600V19h2.600V9.500ZM5.900 5a1.500 1.500 0 1 0 0 3 1.500 1.500 0 0 0 0-3ZM19.400 13.600c0-2.500-.5-4.300-3.400-4.300-1.400 0-2.300.8-2.700 1.500h-.1V9.500h-2.500V19h2.600v-4.700c0-1.200.2-2.400 1.800-2.400 1.500 0 1.500 1.400 1.500 2.500V19h2.700l.1-5.400Z"/></svg></a>
     </div>
+    <nav class="footer-nav" aria-label="Páginas de GEAGRO">
+      <a href="./">GEAGRO</a>
+      <a href="cereales/">GEAGRO CEREALES</a>
+      <a href="vid/">GEAGRO VID</a>
+    </nav>
     <p class="footer-credit">DISEÑADO POR COOPERATIVA GENEOS LTDA.</p>
   </div>
 </footer>
