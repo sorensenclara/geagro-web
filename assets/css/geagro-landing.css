@@ -503,3 +503,8 @@ p { margin: 0; }
 /* Hero: "GEAGRO · by" + logo GENEOS */
 .hero-by { display: inline-flex; align-items: center; gap: 10px; }
 .hero-by img { height: 28px; width: auto; }
+
+/* Dropdown Versiones: la versión actual queda marcada */
+.dd-item.is-current { background: var(--geagro-green-50); pointer-events: none; }
+.dd-vid.is-current { background: var(--geagro-purple-50); }
+.dd-item.is-current small { color: var(--text); }

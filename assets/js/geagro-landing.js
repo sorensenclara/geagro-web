@@ -37,7 +37,7 @@
   document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !ddMenu.hidden) { setDD(false); ddBtn.focus(); } });
   nav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => { setDD(false); setMenu(false); }));
 
-  // Botones "Solicitar demo de CAMPO/VID" preseleccionan la versión
+  // Botones "Solicitar demo de CEREALES/VID" preseleccionan la versión
   document.querySelectorAll('[data-version]').forEach((a) => a.addEventListener('click', () => {
     const radio = document.getElementById('v-' + a.dataset.version);
     if (radio) radio.checked = true;

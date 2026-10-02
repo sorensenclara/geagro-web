@@ -146,25 +146,26 @@
     </button>
 
     <nav class="menu" id="mainNav" aria-label="Principal">
-      <a href="../#nosotros">Nosotros</a>
+      <a href="#incluye">Qué incluye</a>
+      <a href="#como-funciona">Cómo funciona</a>
       <div class="dropdown" id="ddVersiones">
         <button type="button" class="dropdown-toggle" id="ddBtn" aria-expanded="false" aria-controls="ddMenu">
           Versiones
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
         </button>
         <div class="dropdown-menu" id="ddMenu" hidden>
-          <a href="../campo/" class="dd-item dd-campo">
+          <a href="../cereales/" class="dd-item dd-campo">
             <img src="../assets/icons/isologo-campo.svg" alt="" width="40" height="40">
-            <span><strong>GEAGRO CAMPO</strong><small>Campañas agrícolas, insumos, costos y acopio</small></span>
+            <span><strong>GEAGRO CEREALES</strong><small>Campañas agrícolas, insumos, costos y acopio</small></span>
           </a>
-          <a href="../vid/" class="dd-item dd-vid">
+          <a href="../vid/" class="dd-item dd-vid is-current" aria-current="page">
             <img src="../assets/icons/isologo-vid.svg" alt="" width="40" height="40">
-            <span><strong>GEAGRO VID</strong><small>Viñedos: clima, fenología y sanidad</small></span>
+            <span><strong>GEAGRO VID</strong><small>Viñedos: clima, fenología y sanidad · Estás acá</small></span>
           </a>
         </div>
       </div>
       <a href="#faq">Preguntas frecuentes</a>
-      <a href="../assets/docs/Brochure-GEAGRO-VID.pdf" target="_blank" rel="noopener">Brochure</a>
+      <a href="../assets/docs/Brochure-GEAGRO-VID.pdf" target="_blank" rel="noopener noreferrer">Brochure</a>
       <a href="#demo" class="btn btn-primary btn-sm">Solicitar demo</a>
     </nav>
   </div>
@@ -229,7 +230,7 @@
   </section>
 
   <!-- FLUJO -->
-  <section class="section section-soft flow-section">
+  <section class="section section-soft flow-section" id="como-funciona">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Cómo funciona</p>
@@ -333,7 +334,7 @@
           </div>
           <fieldset class="radios">
             <legend>¿Qué versión te interesa?</legend>
-            <label for="v-campo"><input type="radio" id="v-campo" name="version" value="CAMPO"> CAMPO</label>
+            <label for="v-campo"><input type="radio" id="v-campo" name="version" value="CEREALES"> CEREALES</label>
             <label for="v-vid"><input type="radio" id="v-vid" name="version" value="VID" checked> VID</label>
             <label for="v-ambas"><input type="radio" id="v-ambas" name="version" value="Ambas"> Ambas</label>
           </fieldset>
